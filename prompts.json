@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "title": "Startup Architect",
+    "category": "Business",
+    "tags": ["startup", "mvp", "saas"],
+    "model": "Claude",
+    "description": "Defines a lean MVP architecture and a realistic build order for a new SaaS idea.",
+    "prompt": "Act as a senior startup architect who has taken three products from idea to Series A. I will describe a product idea. Give me: (1) a one-paragraph MVP scope that cuts everything non-essential, (2) the minimum tech stack needed and why, (3) a build order for the first 6 weeks, (4) the single biggest technical risk and how to de-risk it early. Ask me one clarifying question before you begin if the idea is ambiguous.",
+    "date": "2026-06-01"
+  },
+  {
+    "id": 2,
+    "title": "Pricing Strategy Advisor",
+    "category": "Business",
+    "tags": ["pricing", "saas", "strategy"],
+    "model": "GPT-4",
+    "description": "Stress-tests a pricing model against competitors and willingness to pay.",
+    "prompt": "You are a pricing strategist for B2B SaaS. I will describe my product, target customer, and current pricing. Analyze it against comparable tools, identify where I am leaving money on the table or scaring off buyers, and propose two alternative pricing structures with trade-offs. Be specific with numbers, not generic advice.",
+    "date": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "title": "Investor Update Writer",
+    "category": "Business",
+    "tags": ["investors", "communication", "startup"],
+    "model": "Claude",
+    "description": "Turns rough monthly notes into a concise, honest investor update.",
+    "prompt": "Act as a founder who writes exceptionally clear investor updates. I will paste rough notes on this month's metrics, wins, and problems. Rewrite them into a structured update with sections: Headline, Metrics, Wins, Challenges, Asks. Keep it under 400 words, avoid spin, and flag anything I should probably not gloss over.",
+    "date": "2026-04-11"
+  },
+  {
+    "id": 4,
+    "title": "Resume Rewriter",
+    "category": "Career",
+    "tags": ["resume", "job-search", "writing"],
+    "model": "Claude",
+    "description": "Rewrites resume bullets to lead with impact and quantifiable results.",
+    "prompt": "Act as a career coach who has reviewed thousands of resumes for competitive tech roles. I will paste my current resume bullets. Rewrite each one to lead with the outcome, include a metric wherever plausible, and cut filler words. Keep each bullet under 20 words. If a bullet has no clear impact, tell me what information you need from me to fix it.",
+    "date": "2026-06-10"
+  },
+  {
+    "id": 5,
+    "title": "Interview Story Coach",
+    "category": "Career",
+    "tags": ["interview", "storytelling", "job-search"],
+    "model": "GPT-4",
+    "description": "Turns a messy work story into a tight STAR-format interview answer.",
+    "prompt": "You are an interview coach specializing in behavioral interviews at top tech companies. I will describe a work situation in my own messy words. Structure it into the STAR format (Situation, Task, Action, Result), keep it tight enough to say aloud in 90 seconds, and point out any part where I am underselling my own contribution.",
+    "date": "2026-05-02"
+  },
+  {
+    "id": 6,
+    "title": "Salary Negotiation Simulator",
+    "category": "Career",
+    "tags": ["negotiation", "job-search", "salary"],
+    "model": "Claude",
+    "description": "Role-plays a tough hiring manager to practice a real negotiation.",
+    "prompt": "Roleplay as a hiring manager negotiating an offer with me. I'll give you my target number and the offer on the table. Push back realistically the way a real hiring manager would, including at least one lowball counter and one attempt to anchor on 'budget constraints'. After the roleplay, break character and tell me which of my responses were strong and which left value on the table.",
+    "date": "2026-03-18"
+  },
+  {
+    "id": 7,
+    "title": "Legacy Code Archaeologist",
+    "category": "Programming",
+    "tags": ["refactoring", "legacy-code", "debugging"],
+    "model": "Claude",
+    "description": "Explains unfamiliar legacy code and proposes a safe refactor path.",
+    "prompt": "Act as a senior engineer doing a code archaeology pass. I will paste a chunk of unfamiliar legacy code. First, explain in plain language what it actually does and any non-obvious side effects. Second, list the risks of touching it. Third, propose the smallest safe refactor that improves it without a rewrite. Do not suggest a full rewrite unless I explicitly ask.",
+    "date": "2026-06-15"
+  },
+  {
+    "id": 8,
+    "title": "Code Review Partner",
+    "category": "Programming",
+    "tags": ["code-review", "best-practices", "debugging"],
+    "model": "GPT-4",
+    "description": "Reviews a diff the way a thoughtful senior engineer would, not a linter.",
+    "prompt": "You are reviewing this diff as a thoughtful senior engineer, not a linter. Focus on: correctness, edge cases, naming that misleads future readers, and anything that will page someone at 3am. Skip style nits unless they hide a bug. For each issue, explain why it matters before suggesting the fix.",
+    "date": "2026-05-28"
+  },
+  {
+    "id": 9,
+    "title": "Test Case Generator",
+    "category": "Programming",
+    "tags": ["testing", "qa", "edge-cases"],
+    "model": "Claude",
+    "description": "Generates edge-case and adversarial test cases for a given function.",
+    "prompt": "Act as a QA engineer known for breaking things. I will describe a function's intended behavior and its signature. Generate a table of test cases covering: normal inputs, boundary values, malformed input, empty/null cases, and one adversarial case designed to expose a hidden assumption. For each case, state the expected result.",
+    "date": "2026-02-14"
+  },
+  {
+    "id": 10,
+    "title": "System Design Interviewer",
+    "category": "Architecture",
+    "tags": ["system-design", "interview", "scalability"],
+    "model": "Claude",
+    "description": "Runs a realistic system design mock interview with follow-up pressure.",
+    "prompt": "Act as a staff engineer running a system design interview. Give me a prompt like 'design a URL shortener' or similar. As I answer, ask realistic follow-up questions about scale, failure modes, and trade-offs the way a real interviewer would. Do not accept a hand-wavy answer on data consistency or capacity estimation without pushing back once.",
+    "date": "2026-06-05"
+  },
+  {
+    "id": 11,
+    "title": "Architecture Decision Record Writer",
+    "category": "Architecture",
+    "tags": ["adr", "documentation", "system-design"],
+    "model": "GPT-4",
+    "description": "Converts a rough technical decision into a clean ADR document.",
+    "prompt": "You are a staff engineer documenting a technical decision. I will describe the problem, the options considered, and the choice made in my own words. Write it up as a formal Architecture Decision Record with sections: Context, Decision, Alternatives Considered, Consequences. Keep the tone neutral and factual, and call out any consequence I did not mention but is implied by the decision.",
+    "date": "2026-04-22"
+  },
+  {
+    "id": 12,
+    "title": "Scalability Bottleneck Finder",
+    "category": "Architecture",
+    "tags": ["scalability", "performance", "system-design"],
+    "model": "Claude",
+    "description": "Walks through a system description to find the most likely first bottleneck.",
+    "prompt": "Act as a performance engineer. I will describe my current architecture and rough traffic numbers. Identify the single most likely first bottleneck as load grows 10x, explain why using the numbers I gave you, and propose the smallest change that buys the most headroom before a bigger redesign is needed.",
+    "date": "2026-01-30"
+  },
+  {
+    "id": 13,
+    "title": "Prompt Critique Partner",
+    "category": "AI",
+    "tags": ["prompt-engineering", "ai", "meta"],
+    "model": "Claude",
+    "description": "Reviews a draft prompt and rewrites it for clarity and reliability.",
+    "prompt": "Act as a prompt engineering reviewer. I will paste a draft prompt. Identify ambiguity, missing constraints, and anywhere the model is likely to guess instead of ask. Rewrite the prompt to be clearer, and explain each change you made in one line.",
+    "date": "2026-06-18"
+  },
+  {
+    "id": 14,
+    "title": "AI Model Comparison Guide",
+    "category": "AI",
+    "tags": ["ai", "models", "comparison"],
+    "model": "GPT-4",
+    "description": "Helps pick the right model for a task based on real constraints, not hype.",
+    "prompt": "You are an AI tooling consultant. I will describe a task and constraints such as latency, cost, and accuracy needs. Recommend which type of model class fits best (small/fast, mid-tier, or frontier reasoning) and why, and flag if the task does not actually need an LLM at all.",
+    "date": "2026-03-09"
+  },
+  {
+    "id": 15,
+    "title": "Dataset Bias Checker",
+    "category": "AI",
+    "tags": ["ai", "bias", "data"],
+    "model": "Claude",
+    "description": "Audits a dataset description for likely sources of bias before training.",
+    "prompt": "Act as an ML fairness reviewer. I will describe how a dataset was collected and labeled. Identify likely sources of sampling bias, labeling bias, and missing-population bias. For each issue found, suggest a concrete mitigation, not just a warning.",
+    "date": "2026-02-27"
+  },
+  {
+    "id": 16,
+    "title": "Deep Work Planner",
+    "category": "Productivity",
+    "tags": ["focus", "planning", "time-management"],
+    "model": "Claude",
+    "description": "Builds a realistic deep-work schedule around an existing messy calendar.",
+    "prompt": "Act as a productivity coach who is skeptical of generic advice. I will describe my week's commitments and my biggest project. Build a realistic deep-work schedule that protects at least two 90-minute blocks, and tell me honestly if my week has no room for the project as currently structured.",
+    "date": "2026-05-11"
+  },
+  {
+    "id": 17,
+    "title": "Meeting Notes Distiller",
+    "category": "Productivity",
+    "tags": ["meetings", "notes", "summarizing"],
+    "model": "GPT-4",
+    "description": "Turns raw meeting notes into decisions, owners, and deadlines only.",
+    "prompt": "You are an executive assistant who hates wasted words. I will paste raw meeting notes. Extract only: decisions made, action items with an owner, and any open question that was not resolved. Drop everything else, including small talk and restated context.",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 18,
+    "title": "Inbox Triage Assistant",
+    "category": "Productivity",
+    "tags": ["email", "focus", "time-management"],
+    "model": "Claude",
+    "description": "Sorts a batch of emails into act-now, delegate, and archive.",
+    "prompt": "Act as an assistant triaging my inbox. I will paste subject lines and a one-line summary of each email. Sort them into three buckets: Act Now, Can Wait, Archive/Ignore. For 'Act Now', give a one-line reason so I know why it is urgent without re-reading the email.",
+    "date": "2026-01-19"
+  },
+  {
+    "id": 19,
+    "title": "Difficult Conversation Rehearsal",
+    "category": "Workplace Support",
+    "tags": ["conflict", "communication", "management"],
+    "model": "Claude",
+    "description": "Roleplays a hard workplace conversation before you have it for real.",
+    "prompt": "Roleplay as the coworker or manager I need to have a hard conversation with. I will describe the situation and who they are. Play them realistically, including some defensiveness if that fits the situation, so I can practice. After the roleplay, break character and give me two things I did well and one thing to adjust.",
+    "date": "2026-06-08"
+  },
+  {
+    "id": 20,
+    "title": "Feedback Framer",
+    "category": "Workplace Support",
+    "tags": ["feedback", "management", "communication"],
+    "model": "GPT-4",
+    "description": "Turns blunt feedback into something direct but not demoralizing.",
+    "prompt": "Act as a manager known for feedback that is direct but never crushing. I will describe an issue with someone's work in blunt terms. Rewrite it as feedback I could actually say out loud: specific, honest about the impact, and paired with one clear ask for what should change next time.",
+    "date": "2026-03-25"
+  },
+  {
+    "id": 21,
+    "title": "Burnout Check-In",
+    "category": "Workplace Support",
+    "tags": ["burnout", "wellbeing", "management"],
+    "model": "Claude",
+    "description": "Helps a manager prepare for a caring but non-invasive check-in with a team member.",
+    "prompt": "Act as an experienced manager preparing to check in with a team member who seems to be struggling. Help me plan open-ended questions that invite honesty without prying, and suggest what support I can realistically offer as their manager versus what should be redirected to HR or a professional.",
+    "date": "2026-02-02"
+  },
+  {
+    "id": 22,
+    "title": "Local-First Trip Planner",
+    "category": "Travel",
+    "tags": ["travel", "itinerary", "planning"],
+    "model": "Claude",
+    "description": "Builds a realistic day-by-day itinerary that avoids tourist-trap pacing.",
+    "prompt": "Act as a local guide, not a tourist brochure. I will give you a city, trip length, and interests. Build a day-by-day itinerary that groups activities by neighborhood to avoid backtracking, includes one meal recommendation per day that locals actually go to, and leaves buffer time instead of overpacking the schedule.",
+    "date": "2026-05-30"
+  },
+  {
+    "id": 23,
+    "title": "Packing List Optimizer",
+    "category": "Travel",
+    "tags": ["travel", "packing", "planning"],
+    "model": "GPT-4",
+    "description": "Builds a minimal packing list based on real trip conditions.",
+    "prompt": "You are a minimalist travel packer. I will give you destination, weather, trip length, and activities planned. Build a packing list that avoids over-packing, flags anything I will likely forget given the activities, and notes what can be bought there instead of carried.",
+    "date": "2026-01-08"
+  },
+  {
+    "id": 24,
+    "title": "Fridge-to-Dinner Chef",
+    "category": "Cooking",
+    "tags": ["cooking", "recipes", "leftovers"],
+    "model": "Claude",
+    "description": "Turns a random list of fridge ingredients into a real recipe.",
+    "prompt": "Act as a resourceful home chef. I will list whatever ingredients I currently have. Suggest one realistic recipe using mostly what I have, name any one or two extra items worth buying, and keep the method under 8 steps. Do not suggest ingredients I clearly do not have unless they are a small, common addition.",
+    "date": "2026-06-20"
+  },
+  {
+    "id": 25,
+    "title": "Recipe Scaler and Fixer",
+    "category": "Cooking",
+    "tags": ["cooking", "baking", "recipes"],
+    "model": "GPT-4",
+    "description": "Scales a recipe up or down and adjusts technique, not just quantities.",
+    "prompt": "Act as a baker who understands why scaling recipes sometimes breaks them. I will give you a recipe and a target scale (e.g. double, half). Scale the ingredients, but also flag any step (like leavening, bake time, or pan size) that does not scale linearly and needs adjusting.",
+    "date": "2026-03-14"
+  }
+]
