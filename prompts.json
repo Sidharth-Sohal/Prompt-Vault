@@ -248,5 +248,334 @@
     "description": "Scales a recipe up or down and adjusts technique, not just quantities.",
     "prompt": "Act as a baker who understands why scaling recipes sometimes breaks them. I will give you a recipe and a target scale (e.g. double, half). Scale the ingredients, but also flag any step (like leavening, bake time, or pan size) that does not scale linearly and needs adjusting.",
     "date": "2026-03-14"
+  },
+  {
+    "id": 26,
+    "title": "Prompt Vault",
+    "category": "prompts for website",
+    "tags": ["website", "static", "github"],
+    "model": "Claude",
+    "description": "This is a prompt for generating this prompt vault website",
+    "prompt": "You are a senior full-stack developer, product designer, and GitHub Pages expert.
+
+Build a complete production-ready Prompt Library website with the following requirements.
+
+PROJECT GOAL
+
+Create a static website called "PromptVault" that allows users to browse, search, filter, and copy AI prompts.
+
+The website must be fully static and deployable directly to GitHub Pages with zero hosting cost.
+
+No backend.
+No database.
+No authentication.
+No API keys.
+No server-side code.
+
+Everything must work using only HTML, CSS, JavaScript, and a local JSON file.
+
+==================================================
+TECHNICAL REQUIREMENTS
+==================================================
+
+Hosting Target:
+- GitHub Pages
+
+Technology:
+- HTML
+- CSS
+- Vanilla JavaScript
+
+No:
+- React
+- Next.js
+- Node.js
+- Build tools
+- Frameworks
+
+The website must run directly after opening index.html.
+
+==================================================
+FILE STRUCTURE
+==================================================
+
+Create the following structure:
+
+prompt-vault/
+
+├── index.html
+├── style.css
+├── script.js
+├── prompts.json
+├── README.md
+├── favicon.ico (optional)
+└── assets/
+
+The final output should be provided as a downloadable ZIP-ready project structure.
+
+==================================================
+PROMPT STORAGE
+==================================================
+
+All prompts must live in prompts.json.
+
+The website must dynamically load data from prompts.json.
+
+I should be able to edit prompts.json later and add new prompts without changing any HTML or JavaScript code.
+
+Example prompt format:
+
+[
+  {
+    "id": 1,
+    "title": "Startup Architect",
+    "category": "Business",
+    "tags": ["startup", "mvp", "saas"],
+    "model": "Claude",
+    "description": "Helps define startup architecture and MVPs.",
+    "prompt": "Act as a senior startup architect..."
+  }
+]
+
+The application should automatically display new prompts when added to prompts.json.
+
+==================================================
+FEATURES
+==================================================
+
+1. Search
+
+Provide a search bar.
+
+Users can search by:
+
+- Title
+- Category
+- Tags
+- Description
+
+Search should update results instantly as the user types.
+
+==================================================
+
+2. Categories
+
+Display category filter buttons.
+
+Examples:
+
+All
+Business
+Career
+Programming
+Architecture
+AI
+Productivity
+Workplace Support
+Travel
+Cooking
+
+Category filters should be generated automatically from prompts.json.
+
+No hardcoded categories.
+
+==================================================
+
+3. Prompt Cards
+
+Each prompt card should display:
+
+Title
+Category
+Tags
+Model
+Description
+
+Each card should have:
+
+Copy Prompt button
+
+When clicked:
+
+- Prompt copied to clipboard
+- Success toast notification appears
+
+==================================================
+
+4. Prompt Details Modal
+
+When clicking a prompt card:
+
+Open a modal showing:
+
+- Full prompt title
+- Description
+- Full prompt text
+
+Include:
+
+Copy Prompt button
+
+==================================================
+
+5. Responsive Design
+
+Must work on:
+
+Desktop
+Tablet
+Mobile
+
+Use a clean modern layout.
+
+==================================================
+
+6. Dark Mode
+
+Include:
+
+Light Mode
+Dark Mode
+
+Remember user preference using localStorage.
+
+==================================================
+
+7. Favorites
+
+Allow user to mark prompts as favorites.
+
+Store favorites in localStorage.
+
+No backend required.
+
+Provide:
+
+Favorites filter
+
+==================================================
+
+8. Tag Filtering
+
+Clicking a tag should filter prompts.
+
+Example:
+
+Tag:
+SaaS
+
+Shows all SaaS-related prompts.
+
+==================================================
+
+9. Sorting
+
+Provide sorting options:
+
+Newest
+A-Z
+Category
+
+==================================================
+
+10. Statistics Section
+
+Display:
+
+Total Prompts
+Categories
+Favorites
+
+Generated automatically from prompts.json.
+
+==================================================
+USER EXPERIENCE
+==================================================
+
+The site should feel like:
+
+- PromptBase
+- Product Hunt
+- Modern SaaS dashboard
+
+Requirements:
+
+- Fast
+- Minimal
+- Clean spacing
+- Modern UI
+- Nice animations
+- Hover effects
+
+==================================================
+PERFORMANCE
+==================================================
+
+Requirements:
+
+- Static only
+- Fast page load
+- No external databases
+- No paid services
+- SEO friendly
+- GitHub Pages compatible
+
+==================================================
+README REQUIREMENTS
+==================================================
+
+Create a detailed README.md covering:
+
+1. Project overview
+
+2. GitHub Pages deployment steps
+
+3. How to update prompts
+
+4. How to add new categories
+
+5. How to add new prompts
+
+6. Folder structure explanation
+
+7. Custom domain instructions
+
+8. Maintenance instructions
+
+9. Future enhancement ideas
+
+==================================================
+SAMPLE DATA
+==================================================
+
+Populate prompts.json with at least 15 realistic example prompts from categories such as:
+
+- Architecture
+- Career
+- Workplace Support
+- AI
+- Business
+- Productivity
+
+==================================================
+DELIVERY FORMAT
+==================================================
+
+Provide:
+
+1. Complete project files
+
+2. Complete source code
+
+3. Folder structure
+
+4. README.md
+
+5. Deployment instructions
+
+6. Final ZIP-ready project
+
+Make all code production-ready and GitHub Pages compatible.",
+    "date": "2026-06-20"
   }
 ]
