@@ -285,12 +285,19 @@
 },
   {
   "id": 29,
-  "title": "Job Application Prompt ",
+  "title": "Job Application Prompt Suite",
   "category": "Career",
-  "tags": ["job-search", "ats", "resume-optimization", "cover-letter", "interview-prep", "career"],
+  "tags": [
+    "job-search",
+    "ats",
+    "resume-optimization",
+    "cover-letter",
+    "interview-prep",
+    "career"
+  ],
   "model": "Claude",
   "description": "Provides a complete set of prompts for job matching, resume optimization, cover letter generation, hiring manager outreach, and interview preparation.",
-  "prompt": "Daily["job-search", "ats", "resume-optimization", "cover-letter", "interview-prep",Claudeany:\n[PASTE]\n\nRole:\n[PASTE]\n\nJob Description:\n[PASTE]\n\nGenerate:\n1. Match Score\n2. ATS Analysis\n3. Resume Improvements\n4. Tailored Resume Content\n5. Cover Letter\n6. Hiring Manager Email\n7. Interview Preparation\n\n\nAdvanced Resume Optimizer Prompt\nAct as a senior recruiter and ATS system.\n\nCompare my resume against this job description.\n\nProduce:\n\n1. ATS Score\n2. Missing Keywords\n3. Missing Skills\n4. Recruiter Concerns\n5. Resume Rewrite Recommendations\n6. Priority Changes Ranked High, Medium, Low\n\nJob Description:\n\n[PASTE]\n\n\nCover Letter Only Prompt\nUsing my project knowledge and the job description below, produce a highly tailored one-page cover letter that feels human, concise, and relevant.\n\nAvoid generic AI language.\n\nJob Description:\n\n[PASTE]\n\n\nHiring Manager Outreach Prompt\nUsing my background and the following role, write:\n\n1. Email to Hiring Manager\n2. LinkedIn Message\n3. Follow-up Message for 7 Days Later\n\nProfessional, direct, and under 150 words each.\n\nJob Description:\n\n[PASTE]\n\n\nInterview Prep Prompt\nI have an upcoming interview.\n\nUsing my experience and the job description:\n\nGenerate:\n\n1. Top 15 likely interview questions\n2. Strong answers using my background\n3. STAR examples from my experience\n4. Questions I should ask the interviewer\n5. Potential weaknesses and how to address them\n\nJob Description:\n\n[PASTE]",
+  "prompt": "Daily Usage Prompt\nAnalyze the following opportunity using my project knowledge.\n\nCompany:\n[PASTE]\n\nRole:\n[PASTE]\n\nJob Description:\n[PASTE]\n\nGenerate:\n1. Match Score\n2. ATS Analysis\n3. Resume Improvements\n4. Tailored Resume Content\n5. Cover Letter\n6. Hiring Manager Email\n7. Interview Preparation\n\n\nAdvanced Resume Optimizer Prompt\nAct as a senior recruiter and ATS system.\n\nCompare my resume against this job description.\n\nProduce:\n\n1. ATS Score\n2. Missing Keywords\n3. Missing Skills\n4. Recruiter Concerns\n5. Resume Rewrite Recommendations\n6. Priority Changes Ranked High, Medium, Low\n\nJob Description:\n\n[PASTE]\n\n\nCover Letter Only Prompt\nUsing my project knowledge and the job description below, produce a highly tailored one-page cover letter that feels human, concise, and relevant.\n\nAvoid generic AI language.\n\nJob Description:\n\n[PASTE]\n\n\nHiring Manager Outreach Prompt\nUsing my background and the following role, write:\n\n1. Email to Hiring Manager\n2. LinkedIn Message\n3. Follow-up Message for 7 Days Later\n\nProfessional, direct, and under 150 words each.\n\nJob Description:\n\n[PASTE]\n\n\nInterview Prep Prompt\nI have an upcoming interview.\n\nUsing my experience and the job description:\n\nGenerate:\n\n1. Top 15 likely interview questions\n2. Strong answers using my background\n3. STAR examples from my experience\n4. Questions I should ask the interviewer\n5. Potential weaknesses and how to address them\n\nJob Description:\n\n[PASTE]",
   "date": "2026-07-30"
 }
  ]
